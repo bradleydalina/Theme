@@ -1,64 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title of the document</title>
+    <title>Base Design Layout</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <style>
-      html,
-      body {
-        height: 100%;
-      }
-      body {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-      }
-      .header-menu,
-      footer {
-        display: flex;
-        align-items: center;
-        width: 100%;
-      }
-      .header-menu {
-        justify-content: flex-end;
-        height: 60px;
-        background: #1c87c9;
-        color: #fff;
-      }
-      h2 {
-        margin: 0 0 8px;
-      }
-      ul li {
-        display: inline-block;
-        padding: 0 10px;
-        list-style: none;
-      }
-      aside {
-        flex: 0.4;
-        height: 165px;
-        padding-left: 15px;
-        border-left: 1px solid #666;
-      }
-      section {
-        flex: 1;
-        padding-right: 15px;
-      }
-      footer {
-        padding: 0 10px;
-        background: #ccc;
-      }
+    <style id='basedesignlayout' type='text/css'>
+        /*
+        -----------------------------------------------
+        Blogger Template Style
+        Name         : Base Design Layout Template
+        Designer     : Bradley B Dalina
+        Release      : August 2024
+        Version      : 1.0
+        License      : Extended License
+        Email        : bradleydalina@gmail.com
+        Author		 : Bradley B Dalina
+        Author Url	 : https://bradleydalina.blogspot.com/
+        -----------------------------------------------
+          
+        /*Imports*/  
+        /*@import url(&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css&quot;);
+        @import url(&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css&quot;);
+        @import url(&quot;https://fonts.googleapis.com/css?family=Raleway:300,300italic,500,500italic&quot;);*/
+  
     </style>
   </head>
   <body>
-    <header class="header-menu">
-      <nav>
-        <ul>
-          <li>Menu item</li>
-          <li>Menu item</li>
-          <li>Menu item</li>
-        </ul>
-      </nav>
-    </header>
+    <section class="row-container header-section" id="header-div" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+        <div class="outer-padding">
+            <div class="container-div">
+                <div class="inner-padding">
+                    <header class="header-div display-f flex-d-c flex-jc-c">
+                        <div class="section" id="header" name="Header">
+                            <div class="widget PageList" data-version="1" id="PageList3">
+                                <div class="widget-content">
+                                    <h1 class="animate__animated animate__fadeInUp animate__slow"><a
+                                            href="https://bradleydalina.blogspot.com/">Bradley B Dalina</a></h1>
+                                    <h2
+                                        class="margin-sm-b animate__animated animate__fadeInUp animate__delay-1s animate__slow">
+                                        UX/UI Web Designer &amp; Developer</h2>
+                                    <p
+                                        class="margin-sm-b animate__animated animate__fadeInUp animate__delay-2s animate__slow">
+                                        Hi! I'm a Web UX/UI designer and developer with a passion for creating user-friendly
+                                        and visually appealing websites, I'm also a Cybersecurity Enthusiast.</p>
+                                    <style>
+                                        #header-div .outer-padding {
+    
+                                            background: linear-gradient(180deg, #05324c99 20%, #05324ceb 50% #05324c 100%);
+    
+                                        }
+                                    </style>
+                                    <span><a class="button margin-sm-b animate__animated animate__fadeIn animate__slow animate__delay-3s"
+                                            href="#contact-modal">Contact me</a></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
     <section>
       <article>
         <header>
@@ -82,8 +83,39 @@
       <p>JavaScript</p>
       <p>PHP</p>
     </aside>
-    <footer>
-      <small>Company © W3docs. All rights reserved.</small>
-    </footer>
+    <section class="section-div footer-section" id="footer-div" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+        <div class="outer-padding padding-md-a background-1">
+            <div class="container-div">
+                <div class="inner-padding">
+                    <footer class="footer-div display-f flex-jc-c margin-h-n flex-md-d-c">
+                        <div class="display-f flex-d-c margin-h flex-jc-c column-lg-f2 flex-ai-l section"
+                            id="footer-copyright" name="Footer Copyright">
+                            <div class="widget Text" data-version="2" id="Text1">
+                                <small class="display-f attribution">
+                                    Copyright © &nbsp; <a href="https://bradleydalina.blogspot.com">
+                                        <div class="copyright">Bradley B Dalina</div>
+                                    </a>
+                                    &nbsp;<span id="copyright-year">2024</span>
+                                    <script> (function (w, d) { w.addEventListener('load', function () { d.getElementById('copyright-year').innerHTML = new Date().getFullYear(); }); })(window, document)</script>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="display-f flex-d-c margin-h flex-jc-c column-lg-f2 flex-ai-r section" id="footer-links"
+                            name="Footer Links">
+                            <div class="widget PageList" data-version="2" id="PageList6">
+                                <div class="widget-content" title="Footer Links">
+                                    <small><a href="/p/terms-and-conditions.html" title="Terms and Conditions">Terms and
+                                            Conditions</a></small>
+                                    <small><a href="/p/privacy-policy.html" title="Privacy Policy">Privacy
+                                            Policy</a></small>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
   </body>
 </html>
